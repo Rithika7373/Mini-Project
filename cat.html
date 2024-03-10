@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        background-color: black;
+             border: 1px black;
+            height: 100px;
+            width: 100px;
+
+        }
+        button{
+        
+            background-color: gray;
+        }
+        .cat{
+            background-color: gray;
+            height: 100px;
+            width: 300px;
+            border-radius: 10px 10px 10px 10px;
+            margin-left: 550px;
+        }
+        #off{
+            margin-top: 20px;
+            padding:5px;
+            justify-content: center;
+            background-color: red;
+            margin-left: 70px;
+        }
+        #on{
+            margin-top: 20px;
+            padding: 5px;
+            margin-left: 50px;
+            background-color: green;
+        }
+        #im1{
+            margin-left: 600px;
+        }
+        #im2{
+            margin-left: 600px;
+        }
+    </style>
+</head>
+<body>
+    <img  src="" style="height: 250px;width:200px ;" id="im1">
+    <img  src="" style="height: 250px;width:200px;" id="im2">
+    <div class="cat">
+        <p style="color: white;text-align: center;">Switched OFF</p>
+    <button onclick="func()" id="off">OFF</button>
+    <button onclick="fuc2()" id="on">ON</button>
+    </div>
+<script>
+    function fuc2(){
+    let a=document.getElementById("im1")
+    a.setAttribute("src","https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-on-img.png")
+    let b=document.getElementById("im2")
+    b.setAttribute("src","https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-img.png")
+    }
+    function func(){
+    let a=document.getElementById("im1")
+    a.setAttribute("src","https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-off-img.png")
+    let b=document.getElementById("im2")
+    b.setAttribute("src","https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-eyes-img.png")
+    }
+</script>
+</body>
+</html>
