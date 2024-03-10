@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP</title>
+    <style>
+        body{
+            background-color: black;
+        }
+h1{
+    display: flex;
+    justify-content: center;
+   margin-top:230px;
+   color:aqua;
+}
+p{
+    display: flex;
+    justify-content: center;
+   font-size: 30px;
+   color: red;
+}
+button{
+    display: flex;
+    margin-left: 690px;
+   font-size: 20px;
+   background-color: rgb(30, 126, 4);
+}
+
+    </style>
+</head>
+<body >
+    <h1  id="scoreval">OTP Generator</h1>
+    <p   type="text" id="inp1"></p>
+    <button  onclick="func()">Generate OTP</button>
+    
+    <script>
+        function func(){
+        let generator=Math.floor(Math.random()*10000)
+        document.getElementById("inp1").innerHTML=generator
+        }
+    </script>
+</body>
+</html>
